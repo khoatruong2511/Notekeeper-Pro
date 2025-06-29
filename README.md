@@ -36,9 +36,9 @@ notekeeper-pro/
 
 ## Screenshots
 
-![Notekeeper Pro Screenshot](./Screenshot/screenshot1.png)
-![Notekeeper Pro Screenshot](./Screenshot/screenshot2.png)
-![Notekeeper Pro Screenshot](./Screenshot/screenshot3.png)
+![Notekeeper Pro Screenshot](/Screenshot/screenshot1.png)
+![Notekeeper Pro Screenshot](/Screenshot/screenshot2.png)
+![Notekeeper Pro Screenshot](/Screenshot/screenshot3.png)
 
 ## Author
 
