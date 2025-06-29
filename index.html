@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notekeeper Pro - Khoa Truong</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Notekeeper Pro</h1>
+        <div>
+            <button class="add-note-btn" onclick="openNoteDialog()">+ Add Note</button>
+            <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+        </div>
+    </header>
+
+    <main id="notesContainer" class="notes-grid">
+
+    </main>
+
+    <dialog id="noteDialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h2 class="dialog-title" id="dialogTitle">Add New Note</h2>
+                <button class="close-btn" onclick="closeNoteDialog()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </button>
+            </div>
+
+            <form id="noteForm">
+                <div class="form-group">
+                    <label for="noteTitle" class="form-label">Title</label>
+                    <input type="text" id="noteTitle" class="form-input" placeholder="Enter note title..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="noteContent" class="form-label">Content</label>
+                    <textarea id="noteContent" class="form-textarea" placeholder="Enter note content..." required></textarea>
+                </div>
+
+                <div class="dialog-actions">
+                    <button type="button" class="cancel-btn" onclick="closeNoteDialog()">Cancel</button>
+                    <button type="submit" class="save-btn">Save Note</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+</body>
+</html>
